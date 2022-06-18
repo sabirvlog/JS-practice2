@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Simple Functions- JavaScript Tutorial #02</title>
+</head>
+<body>
+	<div id="hero"> <!-- This "ID" is just used for css styling not for functions interfere -->
+
+	<input type="text" name="name" id="search" >
+	<button onclick="greet()">Greet</button>
+<br>
+<br>
+	<span id="save"></span>
+</div>
+
+</body>
+		<script type="text/javascript">
+
+			function greet() {
+				var greet = document.getElementById('search').value;
+				  string = "Wellcome " +greet; 
+				document.getElementById('save').innerHTML = string;
+			}
+			
+		</script>
+</html>
